@@ -15,11 +15,15 @@
 <meta property="og:site_name" content="Msz">
 <meta property="og:description" content="官网是爹，比谁写的都好  推荐国内网站 无脑执行 mrma:~ MaShiZhao$ brew install jenv mrma:~ MaShiZhao$ echo &#39;export PATH&#x3D;&quot;$HOME&#x2F;.jenv&#x2F;bin:$PATH&quot;&#39; &gt;&gt; ~&#x2F;.bash_profile mrma:~ MaShiZhao$ echo &#39;eval &amp;q">
 <meta property="og:locale">
+<meta property="og:image" content="http://yoursite.com/images/jenv1.png">
+<meta property="og:image" content="http://yoursite.com/images/jenv2.png">
+<meta property="og:image" content="http://yoursite.com/images/jenv3.png">
 <meta property="article:published_time" content="2020-07-04T05:18:16.000Z">
-<meta property="article:modified_time" content="2020-12-15T14:58:25.000Z">
+<meta property="article:modified_time" content="2020-12-17T04:31:42.000Z">
 <meta property="article:author" content="Msz">
 <meta property="article:tag" content="Jenv">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/jenv1.png">
   
     <link rel="alternative" href="/atom.xml" title="Msz" type="application/atom+xml">
   
@@ -178,17 +182,36 @@
 mrma:~ MaShiZhao$ echo &#39;export PATH=&quot;$HOME/.jenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bash_profile
 mrma:~ MaShiZhao$ echo &#39;eval &quot;$(jenv init -)&quot;&#39; &gt;&gt; ~/.bash_profile
 mrma:~ MaShiZhao$ exec $SHELL -l
-mrma:~ MaShiZhao$ jenv versions</code></pre>
+mrma:~ MaShiZhao$ jenv version</code></pre>
 <a id="more"></a> 
 
+<h2 id="以下脚本详细说明"><a href="#以下脚本详细说明" class="headerlink" title="以下脚本详细说明"></a>以下脚本详细说明</h2><p>安装脚本。<br><img src="/images/jenv1.png"></p>
+<p>doctor脚本 安装完成运行下doctor命令，提示执行cat eval 命令。<br><img src="/images/jenv2.png"></p>
+<p>执行cat 命令无效，改执行echo 命令。<br><img src="/images/jenv3.png"></p>
+<p>以上即可，运行jenv version查看本机jdk版本</p>
+<h2 id="以下jenv命令"><a href="#以下jenv命令" class="headerlink" title="以下jenv命令"></a>以下jenv命令</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>释义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>jenv version</td>
+<td>查看所有jdk版本</td>
+</tr>
+<tr>
+<td>jenv global  10.0.1(备注：运行version，查看到的笨笨)</td>
+<td>切换jdk的版本</td>
+</tr>
+<tr>
+<td>jenv add  .jdk/Contents/Home/(本地jdk路径)</td>
+<td>本地jdk添加到jenv中</td>
+</tr>
+</tbody></table>
+<br/>
 
-
-
-
-
-
-
-
+<h2 id="下载jdk-可指定版本"><a href="#下载jdk-可指定版本" class="headerlink" title="下载jdk 可指定版本"></a>下载jdk 可指定版本</h2><p>brew cask install java<br>brew cask install java6</p>
 
       
 
